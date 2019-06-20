@@ -30,7 +30,7 @@ namespace RockSmithTabExplorer.Controls
 
         void SortClickHandler(object sender, RoutedEventArgs e)
         {
-            GridViewColumnHeader headerClicked = (GridViewColumnHeader)e.OriginalSource;
+            GridViewColumnHeader headerClicked = e.OriginalSource as GridViewColumnHeader;
 
             if (headerClicked == null || headerClicked.Role == GridViewColumnHeaderRole.Padding)
             {
